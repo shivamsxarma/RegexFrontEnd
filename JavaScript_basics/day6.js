@@ -29,3 +29,19 @@ console.log(typeof(g));
 h=10/0;
 console.log(h);
 console.log(typeof(h));
+
+var f="hii";
+console.log(f);
+
+f=56
+console.log(f);
+
+var f ="hellow"
+console.log(f);
+
+let i = "nooo"
+console.log(i);
+
+ i = "yess"
+console.log(i);
+

@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Floating Glass Card */
+.calculator {
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 
+    0 10px 40px rgba(0,0,0,0.5),
+    inset 0 0 20px rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Display with glow */
+#display {
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-align: right;
+  padding: 15px;
+  color: #fff;
+
+  background: rgba(255,255,255,0.08);
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+
+  letter-spacing: 1px;
+}
+
+/* Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  gap: 15px;
+}
+
+/* Base Button */
+button {
+  height: 65px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+
+  transition: all 0.2s ease;
+}
+
+/* Hover = lift effect */
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(255,255,255,0.2);
+}
+
+/* Click = press effect */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Neon colors */
+.operator {
+  color: #00e5ff;
+  text-shadow: 0 0 10px #00e5ff;
+}
+
+.equal {
+  background: linear-gradient(135deg, #00c853, #64dd17);
+  box-shadow: 0 0 15px rgba(0,255,150,0.6);
+}
+
+.clear {
+  color: #ff5252;
+}
+
+.delete {
+  color: #ff9100;
+}
+
+/* 0 button */
+.zero {
+  grid-column: span 2;
+}

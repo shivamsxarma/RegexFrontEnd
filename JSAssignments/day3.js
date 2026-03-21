@@ -123,11 +123,23 @@
 // scopeTest(); 
 
  
-function multiplierFactory(factor) { 
-  return function(num) { 
-	return num * factor; 
-  }; 
+// function multiplierFactory(factor) { 
+//   return function(num) { 
+// 	return num * factor; 
+//   }; 
+// } 
+// let double = multiplierFactory(2); 
+// console.log(double(5)); 
+ 
+let x = 10; 
+function outerFunc() { 
+  console.log(x); 
 } 
-let double = multiplierFactory(2); 
-console.log(double(5)); 
+function test() { 
+  let x = 20 
+ 
+; 
+  outerFunc(); 
+} 
+test(); 
  

@@ -131,15 +131,82 @@
 // let double = multiplierFactory(2); 
 // console.log(double(5)); 
  
-let x = 10; 
-function outerFunc() { 
-  console.log(x); 
-} 
-function test() { 
-  let x = 20 
+// let x = 10; 
+// function outerFunc() { 
+//   console.log(x); 
+// } 
+// function test() { 
+//   let x = 20 
  
-; 
-  outerFunc(); 
+// ; 
+//   outerFunc(); 
+// } 
+// test(); 
+ 
+
+
+// function outer() { 
+//   console.log(a); 
+//   var a = 10; 
+//   function inner() { 
+// 	console.log(a); 
+// 	var a = 20; 
+//   } 
+//   inner(); 
+// } 
+// outer(); 
+ 
+// let count = 0; 
+// function counter() { 
+//   count++; 
+//   return count; 
+// } 
+ 
+// let c1 = counter; 
+// let c2 = counter; 
+ 
+// console.log(c1()); 
+// console.log(c2()); 
+// console.log(c1()); 
+// console.log(count)
+ 
+// function outer() { 
+//   let a = 1; 
+//   return function inner() { 
+// 	return a++; 
+//   }; 
+// } 
+ 
+// const x = outer(); 
+// console.log(x()); 
+// console.log(x()); 
+// console.log(a); 
+
+ 
+// var x = 10; 
+// let x = 20; 
+// console.log(x); 
+
+ 
+// function outer() { 
+//   var x = 10; 
+//   if (true) { 
+// 	let x = 20; 
+// 	console.log(x); 
+//   } 
+//   console.log(x); 
+// } 
+// outer(); 
+ 
+ 
+// const obj = { a: 10 }; 
+// obj.a = 20; 
+// obj = { a: 30 }; 
+// console.log(obj.a); 
+ 
+for (let i = 0; i < 3; i++) { 
+  (function() { 
+	console.log(i); 
+  })(); 
 } 
-test(); 
  

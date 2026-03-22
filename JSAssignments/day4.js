@@ -78,11 +78,42 @@
 // } 
 // outer(); 
  
-var a = 15 ;
-function abc(){
-  console.log(a)
-}
-abc()
+// var a = 15 ;
+// function abc(){
+//   console.log(a)
+// }
+// abc()
  
 // Question: What will be printed and why? Explain how the scope chain works in nested functions. 
  
+
+// console.log(foo()); 
+// var foo = function() { 
+//   return 5; 
+// }; 
+
+ 
+// console.log(test()); 
+// function test() { 
+//   return 5; 
+// } 
+
+ 
+function outerFunc() { 
+  let count = 0; 
+  return { 
+	increment: function() { 
+  	count++; 
+  	return count; 
+	}, 
+	decrement: function() { 
+  	count--; 
+  	return count; 
+	} 
+  }; 
+} 
+ 
+let counter = outerFunc(); 
+console.log(counter.increment()); 
+console.log(counter.decrement()); 
+

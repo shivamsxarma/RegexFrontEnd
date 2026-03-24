@@ -141,10 +141,37 @@
 // testVar(); 
 // console.log(a); 
 
-function testScope() { 
-  console.log(x); 
-  var x = 10; 
-  console.log(x); 
-} 
-testScope(); 
+// function testScope() { 
+//   console.log(x); 
+//   var x = 10; 
+//   console.log(x); 
+// } 
+// testScope(); 
  
+
+// let a = 5; 
+// function test() { 
+//   var a = 10; 
+//   console.log(a); 
+// } 
+// test(); 
+// console.log(a); 
+ 
+// for (var i = 0; i < 3; i++) { 
+//   let j = i; 
+//   console.log(j); 
+// } 
+// console.log(i); 
+// function outer() { 
+//   let counter = 0; 
+//   return function increment() { 
+// 	counter++; 
+// 	return counter; 
+//   }; 
+// } 
+ 
+// let increment1 = outer(); 
+// let increment2 = outer(); 
+// console.log(increment1()); 
+// console.log(increment2()); 
+// console.log(increment1()); 
